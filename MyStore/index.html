@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Printopia</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="for-sale.html">For Sale</a>
+            <button onclick="goToCart()">View Cart</button>
+        </nav>
+    </header>
+    <main>
+        <section id="hourly-spot">
+            <h2>24-Hour Exclusive Spot</h2>
+            <div>
+                <h3 id="hourly-item-name"></h3>
+                <p id="hourly-item-description"></p>
+                <p id="hourly-timer">Calculating...</p>
+                <button onclick="addToCart('hourly')">Buy Now</button>
+            </div>
+        </section>
+        <section id="weekly-spot">
+            <h2>Hot New Item of the Week</h2>
+            <div>
+                <h3 id="weekly-item-name"></h3>
+                <p id="weekly-item-description"></p>
+                <p id="weekly-timer">Calculating...</p>
+                <button onclick="addToCart('weekly')">Buy Now</button>
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

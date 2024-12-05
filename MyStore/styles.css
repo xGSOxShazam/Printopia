@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav a, nav button {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #6e45e2;
+    border: 2px solid #5a35d2;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #7c52f5;
+    border-color: #7c52f5;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #5a35d2;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+}
